@@ -9,7 +9,7 @@ const DOMSelectors = {
   button3: document.querySelector(".theme3"),
   button4: document.querySelector(".kitchen"),
   button5: document.querySelector(".clothing"),
-
+  button6: document.querySelector(".nothing"),
   bg: document.querySelector(".body"),
 };
 

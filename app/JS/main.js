@@ -2,11 +2,11 @@ import "../css/style.css";
 import { DOMSelectors } from "../JS/dom.js";
 import { products } from "../JS/products.js";
 
-let filterver = "none";
+let filterver = "zero";
 let themever = "zero";
 
 function addProducts() {
-  if (filterver === "none") {
+  if (filterver === "zero") {
     products.forEach((product) => {
       addCard(product);
     });
@@ -75,6 +75,13 @@ function clothing(event) {
   addProducts();
 }
 
+function reset(event) {
+  event.preventDefault();
+  document.querySelector(".container").innerHTML = "";
+  filterver = "zero";
+  addProducts();
+}
+
 function addBackgroundOne() {
   document.body.classList.remove("bg-theme-two");
   document.body.classList.add("bg-theme-one");
@@ -96,6 +103,7 @@ DOMSelectors.button2.addEventListener("click", themetwo);
 DOMSelectors.button3.addEventListener("click", themethree);
 DOMSelectors.button4.addEventListener("click", kitchen);
 DOMSelectors.button5.addEventListener("click", clothing);
+DOMSelectors.button6.addEventListener("click", reset);
 
 // cd app
 // npm install
