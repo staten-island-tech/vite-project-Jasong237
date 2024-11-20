@@ -70,12 +70,16 @@ button {
   margin: 5px; 
 }
 
-#cardthemeone {
+
+#zero{
+  background-color: rgb(30, 30, 30);
+}
+#one {
   background-image: linear-gradient(225deg, rgb(49, 49, 49), rgb(0, 42, 30));
 
 }
 
-#cardthemetwo {
+#two {
 
   background-image: linear-gradient(225deg, rgb(49, 49, 49), rgb(59, 0, 0));
 }
